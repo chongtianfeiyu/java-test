@@ -1,6 +1,6 @@
-package Treeset;
+package basic.Set;
 
-public class Student implements Comparable<Student> {
+public class Student {
 	private String name;
 	private Integer id;
 
@@ -15,8 +15,22 @@ public class Student implements Comparable<Student> {
 
 	@Override
 	public String toString() {
-		// TODO Auto-generated method stub
 		return this.name + "," + this.id;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (!(obj instanceof Student)) {
+			return false;
+		}
+		Student su = (Student) obj;
+		return this.name.equals(su.name) && this.id == su.id;
+	}
+	
+	
+	@Override
+	public int hashCode() {
+		return name.hashCode()+id.hashCode();
 	}
 
 	public String getName() {
@@ -34,20 +48,4 @@ public class Student implements Comparable<Student> {
 	public void setId(Integer id) {
 		this.id = id;
 	}
-	
-	@Override
-	public int compareTo(Student o) {
-		int num = 0;
-		if (!(o instanceof Student)) {
-			throw new RuntimeException("不是学生对象");
-		}
-		Student su = (Student) o;
-		num = this.id - su.id;
-		if (num == 0) {
-			return this.name.compareTo(su.name);
-		}
-		return num;
-	}
-
-
 }

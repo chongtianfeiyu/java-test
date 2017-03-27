@@ -1,4 +1,4 @@
-package tryWithResource;
+package io.base.tryWithResource;
 
 import org.junit.Test;
 

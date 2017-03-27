@@ -1,8 +1,8 @@
-package String;
+package basic.String;
 
 public class StringApi {
 	public static void main(String[] args) {
-		//A¡¢ÅÐ¶Ï
+		//Aï¿½ï¿½ï¿½Ð¶ï¿½
 		/*String s1 = "abc";
 		String s2 = "abC";
 		String s3 = "abcdef";
@@ -15,33 +15,33 @@ public class StringApi {
 		System.out.println(s3.contains(s1));
 		System.out.println(s4.endsWith("txt"));
 		System.out.println(s5.startsWith("suffix"));
-		System.out.println(s6.isEmpty()); // ÅÐ¶Ï¿Õ´®
+		System.out.println(s6.isEmpty()); // ï¿½Ð¶Ï¿Õ´ï¿½
 		System.out.println(s6 == "");*/
-		//B¡¢»ñÈ¡
+		//Bï¿½ï¿½ï¿½ï¿½È¡
 		/*String s1 = "abc";
 		System.out.println(s1.length());
-		System.out.println(s1.charAt(0)); //È¡indexÎª0µÄ×Ö·û
+		System.out.println(s1.charAt(0)); //È¡indexÎª0ï¿½ï¿½ï¿½Ö·ï¿½
 		System.out.println(s1.indexOf('b'));
 		System.out.println(s1.indexOf("b"));
 		System.out.println(s1.substring(0,2));*/
-		//C¡¢×ª»»
+		//Cï¿½ï¿½×ªï¿½ï¿½
 	/*	String s1 = "abc";
-		System.out.println(s1.getBytes()); //×Ö·û´®µ½×Ö½ÚÊý×é
+		System.out.println(s1.getBytes()); //ï¿½Ö·ï¿½ï¿½Ö½ï¿½ï¿½ï¿½ï¿½ï¿½
 		//s1.getChars(srcBegin, srcEnd, dst, dstBegin);
-		System.out.println(s1.toCharArray());//×Ö·û´®µ½×Ö·ûÊý×é
+		System.out.println(s1.toCharArray());//ï¿½Ö·ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½
 		System.out.println(s1.toUpperCase()); 
 		System.out.println(s1.concat("ef"));
-		System.out.println(String.valueOf(124));//°ÑÄ³Êý¾ÝÀàÐÍ×ª»»ÎªString
+		System.out.println(String.valueOf(124));//ï¿½ï¿½Ä³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½×ªï¿½ï¿½ÎªString
 		System.out.println(s1);*/
-		//D¡¢Ìæ»»
+		//Dï¿½ï¿½ï¿½æ»»
 		/*String s1  = "abc-ef-gh";
 		System.out.println(s1.replace("-", ""));*/
-		//E¡¢·Ö¸î
+		//Eï¿½ï¿½ï¿½Ö¸ï¿½
 		/*String s1 = "abacedabc";
 		System.out.println(s1.split("ab")[1]);*/
-		//F¡¢È¥³ýÇ°ºó¿Õ¸ñ
+		//Fï¿½ï¿½È¥ï¿½ï¿½Ç°ï¿½ï¿½Õ¸ï¿½
 		/*String s1 = "   anb df  ";
 		System.out.println(s1.trim());*/
-		//G¡¢±È½Ï
+		//Gï¿½ï¿½ï¿½È½ï¿½
 	}
 }

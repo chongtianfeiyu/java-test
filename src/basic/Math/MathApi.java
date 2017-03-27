@@ -1,24 +1,24 @@
-package Math;
+package basic.Math;
 
 public class MathApi {
 	public static void main(String[] args) {
-		//¾ø¶ÔÖµ
+		//ï¿½ï¿½ï¿½Öµ
 		System.out.println(Math.abs(-1));
-		//ÏòÉÏÈ¡Õû
+		//ï¿½ï¿½ï¿½ï¿½È¡ï¿½ï¿½
 		System.out.println(Math.ceil(1.7));
-		//ÏòÏÂÈ¡Õû
+		//ï¿½ï¿½ï¿½ï¿½È¡ï¿½ï¿½
 		System.out.println(Math.floor(1.7));
 		//min
 		System.out.println(Math.max(1, 2));
 		//max
 		System.out.println(Math.max(1, 2));
-		//round£¬ËÄÉáÎåÈë
+		//roundï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 		System.out.println(Math.round(1.4));
 		//random  0<=x<1
 		System.out.println(Math.random());
-		//pow,Ãİº¯Êı
+		//pow,ï¿½İºï¿½ï¿½ï¿½
 		System.out.println(Math.pow(2, 3));
-		//sqrt,Æ½·½¸ù
+		//sqrt,Æ½ï¿½ï¿½ï¿½ï¿½
 		System.out.println(Math.sqrt(2));
 	}
 }

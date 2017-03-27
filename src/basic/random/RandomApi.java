@@ -1,4 +1,4 @@
-package Random;
+package basic.random;
 
 import java.util.Random;
 import java.util.UUID;
@@ -6,11 +6,11 @@ import java.util.UUID;
 
 public class RandomApi {
 	public static void main(String[] args) {
-		//intËæ»úÊý£¬int·¶Î§
+		//intï¿½ï¿½ï¿½ï¿½ï¿½intï¿½ï¿½Î§
 		System.out.println(new Random().nextInt());
-		//×Ô¶¨Òå·¶Î§,0 µ½ ~
+		//ï¿½Ô¶ï¿½ï¿½å·¶Î§,0 ï¿½ï¿½ ~
 		System.out.println(new Random().nextInt(10));
-		//UUIDÉú³É
+		//UUIDï¿½ï¿½ï¿½
 		System.out.println(UUID.randomUUID().toString().replace("-",""));
 	}
 }

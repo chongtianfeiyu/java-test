@@ -1,4 +1,4 @@
-package tryWithResource;
+package io.base.tryWithResource;
 
 import java.io.BufferedReader;
 import java.io.FileReader;

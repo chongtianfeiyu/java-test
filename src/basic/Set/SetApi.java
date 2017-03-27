@@ -1,11 +1,11 @@
-package Set;
+package basic.Set;
 
 import java.util.HashSet;
 import java.util.Set;
 
 public class SetApi {
 	public static void main(String[] args) {
-		//Ê¹ÓÃset×Ô¶¨ÒåÅĞ¶ÏÏàµÈ£¬ĞèÒªÖØĞ´hashCode()ºÍequals()
+		//Ê¹ï¿½ï¿½setï¿½Ô¶ï¿½ï¿½ï¿½ï¿½Ğ¶ï¿½ï¿½ï¿½È£ï¿½ï¿½ï¿½Òªï¿½ï¿½Ğ´hashCode()ï¿½ï¿½equals()
 		Set<Student> set = new HashSet<Student>();
 		Student s1 = new Student("andy1",1);
 		set.add(s1);

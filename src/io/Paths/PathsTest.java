@@ -1,4 +1,4 @@
-package PathsTest;
+package io.Paths;
 
 import java.io.File;
 import java.io.IOException;

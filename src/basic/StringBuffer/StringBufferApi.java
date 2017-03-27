@@ -1,4 +1,4 @@
-package StringBuffer;
+package basic.StringBuffer;
 
 public class StringBufferApi {
 	public static void main(String[] args) {
