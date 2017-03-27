@@ -6,12 +6,12 @@ import java.nio.IntBuffer;
 
 import org.junit.Test;
 /**
- * bufferÖ÷Òª²ÎÊý
- * 1¡¢capacity ÈÝÁ¿ ,ÉèÖÃ£ºbuffer.allocate(capacity)£¬»ñÈ¡:buffer.capacity()
- * 2¡¢limit »º´æÏÞÖÆ£¬ÉèÖÃ£ºbuffer.limit(limit),»ñÈ¡£ºbuffer.limit()
- * 3¡¢position ´æ´¢µÄÎ»ÖÃ£¬ÉèÖÃ£ºbuffer.position(position),»ñÈ¡£ºbuffer.position()
- * 4¡¢´æÈëÖµ,put()¡¢putXxx()¡¢get()¡¢getXxx£¬Ã¿´Î"ÎÞ²Î´æÈë"»òÕß"ÎÞ²Î»ñÈ¡"¶¼Ê¹µÃposition¸Ä±ä£¬¸Ä±ä´óÐ¡£¬°´µ¥Î»Ëã£¬ÏÂÃæÀý×ÓÖÐ£ºbyteÎªµ¥Î»£¬ËùÒÔ²åÈëchar£¬ÒÆ¶¯2¸ö×Ö½Ú
- * 5¡¢postion -> 0£¬flip()·½·¨
+ * bufferï¿½ï¿½Òªï¿½ï¿½ï¿½ï¿½
+ * 1ï¿½ï¿½capacity ï¿½ï¿½ï¿½ï¿½ ,ï¿½ï¿½ï¿½Ã£ï¿½buffer.allocate(capacity)ï¿½ï¿½ï¿½ï¿½È¡:buffer.capacity()
+ * 2ï¿½ï¿½limit ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ£ï¿½ï¿½ï¿½ï¿½Ã£ï¿½buffer.limit(limit),ï¿½ï¿½È¡ï¿½ï¿½buffer.limit()
+ * 3ï¿½ï¿½position ï¿½æ´¢ï¿½ï¿½Î»ï¿½Ã£ï¿½ï¿½ï¿½ï¿½Ã£ï¿½buffer.position(position),ï¿½ï¿½È¡ï¿½ï¿½buffer.position()
+ * 4ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öµ,put()ï¿½ï¿½putXxx()ï¿½ï¿½get()ï¿½ï¿½getXxxï¿½ï¿½Ã¿ï¿½ï¿½"ï¿½Þ²Î´ï¿½ï¿½ï¿½"ï¿½ï¿½ï¿½ï¿½"ï¿½Þ²Î»ï¿½È¡"ï¿½ï¿½Ê¹ï¿½ï¿½positionï¿½Ä±ä£¬ï¿½Ä±ï¿½ï¿½Ð¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Î»ï¿½ã£¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð£ï¿½byteÎªï¿½ï¿½Î»ï¿½ï¿½ï¿½ï¿½ï¿½Ô²ï¿½ï¿½ï¿½charï¿½ï¿½ï¿½Æ¶ï¿½2ï¿½ï¿½ï¿½Ö½ï¿½
+ * 5ï¿½ï¿½postion -> 0ï¿½ï¿½flip()ï¿½ï¿½ï¿½ï¿½
  * @author linzf
  */
 public class TestBuffer {
@@ -29,11 +29,11 @@ public class TestBuffer {
 	
 	@Test
 	/*
-	 * ´ó¶Ë±íÊ¾£¬¸ßÎ»×Ö½ÚÔÚÇ°
-	 * Ð¡¶Î±íÊ¾£¬µÍÎ»×Ö½ÚÔÚÇ°
-	 * Àý×Ó£ºintÎª4×Ö½Ú£¬
-	 * 	   1 = 0x00000001,´ó¶Ë±íÊ¾£¬2^0 = 1 
-	 *     1 = 0x01000000,Ð¡¶Ë±íÊ¾£¬2^24 = 16777216
+	 * ï¿½ï¿½Ë±ï¿½Ê¾ï¿½ï¿½ï¿½ï¿½Î»ï¿½Ö½ï¿½ï¿½ï¿½Ç°
+	 * Ð¡ï¿½Î±ï¿½Ê¾ï¿½ï¿½ï¿½ï¿½Î»ï¿½Ö½ï¿½ï¿½ï¿½Ç°
+	 * ï¿½ï¿½ï¿½Ó£ï¿½intÎª4ï¿½Ö½Ú£ï¿½
+	 * 	   1 = 0x00000001,ï¿½ï¿½Ë±ï¿½Ê¾ï¿½ï¿½2^0 = 1 
+	 *     1 = 0x01000000,Ð¡ï¿½Ë±ï¿½Ê¾ï¿½ï¿½2^24 = 16777216
 	 */
 	public void test2(){
 		ByteBuffer buffer = ByteBuffer.allocate(32);
@@ -47,8 +47,8 @@ public class TestBuffer {
 	
 	@Test
 	/*
-	 * flip ½«position±äÎª
-	 * ¶ÁÈ¡ÏÞÖÆÄ¬ÈÏÎªcapacityµÄÒ»°ë
+	 * flip ï¿½ï¿½positionï¿½ï¿½Îª
+	 * ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½Ä¬ï¿½ï¿½Îªcapacityï¿½ï¿½Ò»ï¿½ï¿½
 	 */
 	public void test3(){
 		ByteBuffer buffer = ByteBuffer.allocate(32);
@@ -62,36 +62,30 @@ public class TestBuffer {
 		buffer.flip();
 		System.out.println(buffer.position());//0
 //		System.out.println(buffer.getInt());//2^16+2^9+3,66051
-		System.out.println(buffer.get());// 0,Ïàµ±ÓÚbuffer.get(0)
-		System.out.println(buffer.position());//positionÒÆ¶¯µ½ÁË1
-		buffer.compact();//Ñ¹Ëõ
-		System.out.println(buffer.position());//positionÒÆ¶¯µ½ÁË15,ÒòÎªlimitÎª16£¬ÒÔÕâ¸öÎªµ¥Î»Ñ¹Ëõ£¬ÇÒÒÑ¾­¶ÁÈ¡¹ýµÄÖµ£¬ÎÞ·¨»ñÈ¡µ½ÁË
-		System.out.println(buffer.get(0));//Êµ¼Ê»ñÈ¡ÎªÔ­À´µÄ£ºbyte1[1]Îª1
+		System.out.println(buffer.get());// 0,ï¿½àµ±ï¿½ï¿½buffer.get(0)
+		System.out.println(buffer.position());//positionï¿½Æ¶ï¿½ï¿½ï¿½ï¿½ï¿½1
+		buffer.compact();//Ñ¹ï¿½ï¿½
+		System.out.println(buffer.position());//positionï¿½Æ¶ï¿½ï¿½ï¿½ï¿½ï¿½15,ï¿½ï¿½ÎªlimitÎª16ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Îªï¿½ï¿½Î»Ñ¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ñ¾ï¿½ï¿½ï¿½È¡ï¿½ï¿½ï¿½Öµï¿½ï¿½ï¿½Þ·ï¿½ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½
+		System.out.println(buffer.get(0));//Êµï¿½Ê»ï¿½È¡ÎªÔ­ï¿½ï¿½ï¿½Ä£ï¿½byte1[1]Îª1
 	}
 	
 	@Test
 	/*
 	 * IntBuffer intBuffer = buffer.asIntBuffer();
-	 * intBufferÎªÐÂµÄBuffer,bufferÔ­À´´æµÄÖµÔÚintBuffer±»Çå³ý£¬ÇÒÁ½¸öBuffer»áÏà»¥Ó°Ïì
+	 * intBufferÎªï¿½Âµï¿½Buffer,bufferÔ­ï¿½ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½intBufferï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Bufferï¿½ï¿½ï¿½à»¥Ó°ï¿½ï¿½
 	 */
 	public void test4(){
 		ByteBuffer buffer = ByteBuffer.allocate(32);
 		buffer.putInt(1);
 		System.out.println(buffer.position());// 4
 		IntBuffer intBuffer = buffer.asIntBuffer();
-		System.out.println(intBuffer.position());// ½«Î»ÖÃÖØÖÃÎª0
-		intBuffer.put(2);//ÒÆ¶¯ÁËÎ»ÖÃµ½1
-		System.out.println(intBuffer.get(0));//2£¬bufferÖÐµÄÖµ±»Çå³ýµôÁË 
-		System.out.println(buffer.position());//bufferÎ»ÖÃÎª4£¬ÇÒintBuffer¸Ä±ä»áÓ°Ïìµ½buffer
+		System.out.println(intBuffer.position());// ï¿½ï¿½Î»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Îª0
+		intBuffer.put(2);//ï¿½Æ¶ï¿½ï¿½ï¿½Î»ï¿½Ãµï¿½1
+		System.out.println(intBuffer.get(0));//2ï¿½ï¿½bufferï¿½Ðµï¿½Öµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 
+		System.out.println(buffer.position());//bufferÎ»ï¿½ï¿½Îª4ï¿½ï¿½ï¿½ï¿½intBufferï¿½Ä±ï¿½ï¿½Ó°ï¿½ìµ½buffer
 		int value = buffer.getInt();
 		System.out.println(value);//2
 		buffer.putInt(10);
 		System.out.println(intBuffer.get(1));
-	}
-	
-	
-	@Test
-	public void test5(){
-		
 	}
 }
