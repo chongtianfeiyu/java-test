@@ -6,6 +6,7 @@ import java.lang.ref.ReferenceQueue;
 
 public class UserReferenceQueue {
 	private static class ReferenceObject {
+		@Override
 		protected void finalize() throws Throwable {
 			System.out.println("finalize 被调用");
 			super.finalize();

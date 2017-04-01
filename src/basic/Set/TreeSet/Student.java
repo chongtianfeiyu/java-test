@@ -41,7 +41,7 @@ public class Student implements Comparable<Student> {
 		if (!(o instanceof Student)) {
 			throw new RuntimeException("����ѧ�����");
 		}
-		Student su = (Student) o;
+		Student su = o;
 		num = this.id - su.id;
 		if (num == 0) {
 			return this.name.compareTo(su.name);

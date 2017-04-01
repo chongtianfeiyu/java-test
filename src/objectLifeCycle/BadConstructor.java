@@ -17,6 +17,7 @@ class Child extends Parent {
 		this.count = count;
 	}
 
+	@Override
 	public int getCount() {
 		return count;
 	}

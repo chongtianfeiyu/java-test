@@ -11,6 +11,7 @@ public class GreetingClassLoader extends ClassLoader implements Opcodes {
 		this.message = message;
 	}
 
+	@Override
 	protected Class<?> findClass(String name) throws ClassNotFoundException {
 		byte[] classData = generateClassData(name);
 		return defineClass(name, classData, 0, classData.length);

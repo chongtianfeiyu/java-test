@@ -13,6 +13,7 @@ class Dog extends Animal {
 	public Dog(int count) {
 		this.count = count;
 	}
+	@Override
 	public int getCount() {
 		return count;
 	}
